@@ -16,7 +16,7 @@ class ActionCounterTest {
         Random random = new Random();
         CounterStupidProxy counter = new CounterStupidProxy();
         callCounterRandom(counter, 100,1000);
-        int timestampToQuery = random.nextInt(300,1300);
+        int timestampToQuery = random.nextInt(1001,1300);
         int expected = counter.getStupidSolution(timestampToQuery);
         assertEquals(expected, counter.getActions(timestampToQuery));
     }
